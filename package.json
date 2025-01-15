@@ -1,13 +1,24 @@
 {
-  "name": "helloworld-app",
+  "name": "helloworld",
   "version": "1.0.0",
-  "description": "A Hello World Azure Function app in Node.js",
+  "description": "A simple Hello World Azure Function app",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
   "scripts": {
-    "start": "func start"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "azure",
+    "function",
+    "nodejs",
+    "hello-world"
+  ],
   "author": "Your Name",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": ">=14.x"
+  }
 }

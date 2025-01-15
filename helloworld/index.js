@@ -1,8 +1,11 @@
-module.exports = async function (context, req) {
-    context.log("Hello World function processed a request.");
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
 
-    context.res = {
-        status: 200,
-        body: "Hello, World!"
-    };
-};
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.listen(port, () => {
+  console.log(`App listening at http://localhost:${port}`);
+});
