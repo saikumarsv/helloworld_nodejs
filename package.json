@@ -4,7 +4,7 @@
   "description": "A simple Hello World Azure Function app",
   "main": "helloworld/index.js",
   "scripts": {
-    "start": "func start",
+    "start": "node helloworld/index.js",
     "test": "echo \"Error: no test specified\""
   },
   "keywords": [
