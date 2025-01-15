@@ -2,9 +2,9 @@
   "name": "helloworld",
   "version": "1.0.0",
   "description": "A simple Hello World Azure Function app",
-  "main": "index.js",
+  "main": "helloworld/index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "func start",
     "test": "echo \"Error: no test specified\""
   },
   "keywords": [
