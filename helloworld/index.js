@@ -1,11 +1,19 @@
-const express = require('express');
-const app = express();
-const port = process.env.PORT || 3000;
+module.exports = async function (context, req) {
+    try {
+        context.log("Processing request...");
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+        // Return a successful response
+        context.res = {
+            status: 200,
+            body: "Hello, World!"
+        };
+    } catch (error) {
+        context.log("Error occurred:", error);
 
-app.listen(port, () => {
-  console.log(`App listening at http://localhost:${port}`);
-});
+        // Return an error response
+        context.res = {
+            status: 500,
+            body: "Internal Server Error"
+        };
+    }
+};
