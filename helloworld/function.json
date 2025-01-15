@@ -13,6 +13,6 @@
         "name": "res"
       }
     ],
-    "scriptFile": "helloworld/index.js"
+    "scriptFile": "index.js"
   }
   
