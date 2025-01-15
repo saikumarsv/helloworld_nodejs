@@ -1,11 +1,13 @@
 {
-    "name": "hello-world",
-    "version": "1.0.0",
-    "main": "index.js",
-    "scripts": {
-      "start": "node index.js",
-      "build": "echo Build step executed",
-      "test": "echo No tests specified"
-    },
-    "dependencies": {}
+  "name": "helloworld-app",
+  "version": "1.0.0",
+  "description": "A Hello World Azure Function app in Node.js",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "func start"
+  },
+  "author": "Your Name",
+  "license": "MIT"
 }
