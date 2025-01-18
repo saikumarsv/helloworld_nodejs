@@ -5,7 +5,7 @@ module.exports = async function (context, req) {
         // Return a successful response
         context.res = {
             status: 200,
-            body: "Hello, India!"
+            body: "Hello, World!"
         };
     } catch (error) {
         context.log("Error occurred:", error);
