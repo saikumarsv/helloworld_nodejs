@@ -15,8 +15,8 @@
   ],
   "author": "Your Name",
   "license": "MIT",
-  "dependensscies": {
-    "express": "^4.17.1"
+  "dependencies": {
+    "expresssai": "^4.17.1"
   },
   "engines": {
     "node": ">=14.x"
