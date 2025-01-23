@@ -1,4 +1,4 @@
-name: CI/CD to Azure Functions
+name: PR Build
 
 on:
   pull_request:
