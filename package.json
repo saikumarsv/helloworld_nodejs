@@ -15,7 +15,7 @@
   ],
   "author": "Your Name",
   "license": "MIT",
-  "dependencies": {
+  "dependensscies": {
     "express": "^4.17.1"
   },
   "engines": {
