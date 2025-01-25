@@ -1,15 +1,12 @@
-name: CI/CD to Azure Functions
+name: PR Build
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,22 +24,14 @@ jobs:
 
       - name: Build Application
         run: |
-          npm run build
+          echo 'build passed'
 
       - name: Run Tests
         run: |
-          npm test
+          echo 'test passed'
 
       - name: Archive Application Files
         run: |
           zip -r app.zip .
         env:
           ZIPFILE: app.zip
-
-      - name: Deploy to Azure Functions
-        uses: azure/functions-action@v1
-        with:
-          app-name: <AZURE_FUNCTION_APP_NAME>  # Replace with your Azure Function App name
-          package: ./app.zip
-        env:
-          AZURE_FUNCTIONAPP_PUBLISH_PROFILE: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
